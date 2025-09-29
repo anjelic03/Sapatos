@@ -6,7 +6,7 @@ const catalogData = [
     name: "Adasdas Sneaker",
     price: 3290,
     image: "images/adasdas.png",
-    description: "Lightweight knit upper with responsive cushioning for everyday adventures."
+    description: "Unique style and lightweight comfort for everyday wear."
   },
   {
     id: "sapatos-02",
@@ -14,7 +14,7 @@ const catalogData = [
     name: "Mike Sneakers",
     price: 3890,
     image: "images/mike.png",
-    description: "Breathable runner with energy return midsole made for long city strides."
+    description: "Classic athletic look with breathable support."
   },
   {
     id: "sapatos-03",
@@ -22,7 +22,7 @@ const catalogData = [
     name: "PMUA Sneakers",
     price: 4490,
     image: "images/pmua.png",
-    description: "Weather-ready leather boot with plush lining to keep you cozy and dry."
+    description: "Durable, bold design for trendsetters."
   }
 ];
 
@@ -482,3 +482,4 @@ document.addEventListener("DOMContentLoaded", () => {
     yearEl.textContent = new Date().getFullYear();
   }
 });
+
