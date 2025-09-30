@@ -3,27 +3,57 @@ const catalogData = [
   {
     id: "sapatos-01",
     type: "sneaker",
-    name: "Adasdas Sneaker",
-    price: 3290,
-    image: "images/adasdas.png",
-    description: "Unique style and lightweight comfort for everyday wear."
+    name: "Adizero EVO SL Shoes",
+    price: 8500,
+    image: "images/shoes1.avif",
+    description:
+      "Experience speed with the Adizero Evo SL, influenced by the innovative Adizero running family. It blends advanced Adizero technology with a striking racing-inspired design, offering versatility for both running and casual use. The LIGHTSTRIKE PRO foam midsole ensures comfort and responsive cushioning for enhanced energy return.",
   },
   {
     id: "sapatos-02",
     type: "sneaker",
-    name: "Mike Sneakers",
-    price: 3890,
-    image: "images/mike.png",
-    description: "Classic athletic look with breathable support."
+    name: "Adidas Hoops 4.0 Shoes",
+    price: 3200,
+    image: "images/shoes2.avif",
+    description:
+      "These adidas shoes, inspired by classic basketball models, feature a low-profile silhouette, synthetic leather upper, and suede toe cap, making them versatile and wearable. The rubber cupsole reflects the design of traditional basketball styles.",
   },
   {
     id: "sapatos-03",
     type: "sneaker",
-    name: "PMUA Sneakers",
-    price: 4490,
-    image: "images/pmua.png",
-    description: "Durable, bold design for trendsetters."
-  }
+    name: "Own the Game 3 Shoes",
+    price: 6800,
+    image: "images/shoes4.avif",
+    description:
+      "These adidas basketball shoes are designed for versatility, featuring a breathable mesh upper suitable for both the court and street. They incorporate adidas LIGHTMOTION cushioning for responsive support during dynamic movements, enhancing performance with every step.",
+  },
+  {
+    id: "sapatos-04",
+    type: "sneaker",
+    name: "LeBron NXXT Genisus QS EP",
+    price: 9095,
+    image: "images/shoes5.avif",
+    description:
+      "With lightweight, supportive mesh and flexible Air Zoom cushioning for all-game speed, the LeBron NXXT Genisus gives you the tools you need to redefine the game. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.",
+  },
+  {
+    id: "sapatos-05",
+    type: "sneaker",
+    name: "Nike Precision 7",
+    price: 3695,
+    image: "images/shoes6.avif",
+    description:
+      "Score at will at the rim or from deep in the Nike Precision 7. Crafted with a combination of ground control, comfort and on-court traction, it's perfect for instant impact plays when your name is called for the next casual game. Check in and make the plays that swing the outcome in your favour.",
+  },
+  {
+    id: "sapatos-06",
+    type: "sneaker",
+    name: "Jordan NU Retro 1 G",
+    price: 5159,
+    image: "images/shoes7.avif",
+    description:
+      "An instant classic, the Jordan NU Retro 1 G combines iconic Jordan style with advanced golf technology. It features a rubber heel and a durable plastic forefoot plate for stability and comfort, along with seven removable spikes for traction during play.Durable, bold design for trendsetters.",
+  },
 ];
 
 // Creational Pattern: Product Factory ✮ ⋆ ˚｡𖦹 ⋆｡°✩ ✮ ⋆ ˚｡𖦹 ⋆｡°✩ ✮ ⋆ ˚｡𖦹 ⋆｡°✩ ✮ ⋆ ˚｡𖦹 ⋆｡°✩ ✮ ⋆ ˚｡𖦹 ⋆｡°✩
@@ -193,8 +223,8 @@ class Cart {
         addons: {
           discount: false,
           giftWrap: false,
-          freeShipping: false
-        }
+          freeShipping: false,
+        },
       });
     }
     this.notify();
@@ -260,7 +290,7 @@ class Cart {
         basePerUnit: baseUnit,
         lineTotal,
         decorations: decorated.getDecorations(),
-        addons: { ...entry.addons }
+        addons: { ...entry.addons },
       });
     });
 
@@ -271,8 +301,8 @@ class Cart {
       totals: {
         base: baseTotal,
         adjustments: adjustment,
-        grandTotal: decoratedTotal
-      }
+        grandTotal: decoratedTotal,
+      },
     };
   }
 }
@@ -281,7 +311,7 @@ class Cart {
 const currency = new Intl.NumberFormat("en-PH", {
   style: "currency",
   currency: "PHP",
-  minimumFractionDigits: 0
+  minimumFractionDigits: 0,
 });
 
 function formatPeso(value) {
@@ -482,4 +512,3 @@ document.addEventListener("DOMContentLoaded", () => {
     yearEl.textContent = new Date().getFullYear();
   }
 });
-
