@@ -19,7 +19,8 @@ A Mini E-Commerce Shopping Cart Website. Built with HTML, CSS, and vanilla JavaS
 - **Structural – Decorator:** Gift wrap, discount, and free shipping add-ons wrap products without changing the base class.
 - **Behavioral – Observer:** The `Cart` notifies the cart list, totals panel, and header badge whenever items change.
 
-Replace the placeholder SVGs inside `images/` with your actual product shots or logo to personalize the site.
+## How to Run
+Open `index.html` in any modern browser. No build tools or servers required.
 
 ## Manual Test Ideas
 - Add each shoe to the cart and confirm quantity updates.
